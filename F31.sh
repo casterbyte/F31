@@ -107,9 +107,9 @@ if sudo iptables -A INPUT -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT &
     sudo iptables -A INPUT -p icmp --icmp-type 11 -m conntrack --ctstate NEW -j ACCEPT &&
     sudo iptables -A INPUT -p icmp -j DROP &&
     sudo iptables -t mangle -A PREROUTING -p tcp -m conntrack --ctstate NEW -m tcpmss ! --mss 536:65535 -j DROP > /dev/null 2>&1; then
-    echo -e "${GREEN}[*] Firewall adjusted successfully.${NC}"
+    echo -e "${GREEN}[*] Firewall configuration successfully.${NC}"
 else
-    echo -e "${RED}[!] Error adjusting firewall.${NC}"
+    echo -e "${RED}[!] Error configuration firewall.${NC}"
     exit 1
 fi
 
