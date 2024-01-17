@@ -89,7 +89,7 @@ else
 fi
 
 # Increasing and shifting TTL value 
-echo -e "\n${YELLOW}[+] Increasing and shifting TTL (TTL=210)${NC}"
+echo -e "\n${YELLOW}[+] Increasing and shifting TTL (TTL=80)${NC}"
 if sudo sysctl -w net.ipv4.ip_default_ttl=80 > /dev/null 2>&1 && sudo iptables -t mangle -A PREROUTING -i "${INTERFACE}" -j TTL --ttl-inc 1 > /dev/null 2>&1; then
     echo -e "${GREEN}[*] TTL values adjusted successfully.${NC}"
 else
