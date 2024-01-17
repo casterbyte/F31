@@ -73,6 +73,8 @@ For instructions and an example of how to use it, visit: https://github.com/wear
 
 [+] Changing hostname
 [*] Hostname changed to ubuntu successfully.
+[+] Updating /etc/hosts
+[*] /etc/hosts updated successfully.
 
 [+] Enabling hostname transfer via DHCP
 [*] Hostname through DHCP disabled successfully.
@@ -122,7 +124,7 @@ For instructions and an example of how to use it, visit: https://github.com/wear
 [+] Enabling ICMP Redirect
 
 [+] Disabling NTP client
-[*] NTP client disabled successfully.
+[*] NTP client enabled successfully.
 
 [+] Restoring firewall configuration
 
@@ -131,6 +133,9 @@ For instructions and an example of how to use it, visit: https://github.com/wear
 [+] Resetting TTL (TTL=64)
 
 [+] Restoring hostname
+[*] Hostname restored to kali successfully.
+[+] Restoring /etc/hosts
+[*] /etc/hosts restored successfully.
 
 [+] Removing traffic shaping (noise reduction)
 [+] Traffic shaping removed
