@@ -80,7 +80,7 @@ For instructions and an example of how to use it, visit: https://github.com/wear
 [+] Disabling NTP client
 [*] NTP client shut down successfully.
 
-[+] Increasing and shifting TTL (TTL=210)
+[+] Increasing and shifting TTL (TTL=80)
 [*] TTL values adjusted successfully.
 
 [+] Configuring firewall
