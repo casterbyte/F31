@@ -122,7 +122,7 @@ For instructions and an example of how to use it, visit: https://github.com/wear
 [+] Enabling ICMP Redirect
 
 [+] Disabling NTP client
-[*] NTP client enabled successfully.
+[*] NTP client disabled successfully.
 
 [+] Restoring firewall configuration
 
