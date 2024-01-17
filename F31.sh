@@ -150,7 +150,7 @@ if [ "$NOISE_REDUCTION_ARG" == "--noise-reduction" ]; then
         exit 1
     fi
 else
-    echo -e "\n${YELLOW}[+] No noise reduction requested.${NC}"
+    echo -e "\n${YELLOW}[*] No noise reduction requested.${NC}"
 fi
 
 echo -e "${GREEN}[*] Script executed successfully.${NC}"

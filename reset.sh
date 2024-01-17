@@ -101,7 +101,7 @@ fi
 existing_qdisc=$(sudo tc qdisc show dev "${INTERFACE}" | grep -o "30Kbit" )
 
 if [ -z "$existing_qdisc" ]; then
-    echo -e "\n${YELLOW}[!] No traffic shaping configuration found${NC}"
+    echo -e "\n${YELLOW}[*] No traffic shaping configuration found${NC}"
 else
     echo -e "\n${YELLOW}[+] Removing traffic shaping (noise reduction)${NC}"
     sudo tc qdisc del dev "${INTERFACE}" root > /dev/null 2>&1
