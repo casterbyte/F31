@@ -84,9 +84,19 @@ sudo sysctl -w net.ipv4.ip_default_ttl=64 > /dev/null 2>&1
 sudo iptables -t mangle -D PREROUTING -i "${INTERFACE}" -j TTL --ttl-inc 1
 
 # Restore Hostname
-echo -e "\n${YELLOW}[+] Restoring hostname${NC}"
-sudo hostnamectl set-hostname "${HOSTNAME}"
-
+if sudo hostnamectl set-hostname "${HOSTNAME}"; then
+    echo -e "${GREEN}[*] Hostname restored to ${HOSTNAME} successfully.${NC}"
+    echo -e "${YELLOW}[+] Restoring /etc/hosts${NC}"
+    if sudo sed -i "s/127.0.1.1.*/127.0.1.1\t${HOSTNAME}/" /etc/hosts; then
+        echo -e "${GREEN}[*] /etc/hosts restored successfully.${NC}"
+    else
+        echo -e "${RED}[!] Error restoring /etc/hosts.${NC}"
+        exit 1
+    fi
+else
+    echo -e "${RED}[!] Error restoring hostname.${NC}"
+    exit 1
+fi
 # Remove traffic shaping
 existing_qdisc=$(sudo tc qdisc show dev "${INTERFACE}" | grep -o "30Kbit" )
 

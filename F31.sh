@@ -65,11 +65,17 @@ fi
 echo -e "\n${YELLOW}[+] Changing hostname${NC}"
 if sudo hostnamectl set-hostname "${HOSTNAME}"; then
     echo -e "${GREEN}[*] Hostname changed to ${HOSTNAME} successfully.${NC}"
+    echo -e "${YELLOW}[+] Updating /etc/hosts${NC}"
+    if sudo sed -i "s/127.0.1.1.*/127.0.1.1\t${HOSTNAME}/" /etc/hosts; then
+        echo -e "${GREEN}[*] /etc/hosts updated successfully.${NC}"
+    else
+        echo -e "${RED}[!] Error updating /etc/hosts.${NC}"
+        exit 1
+    fi
 else
     echo -e "${RED}[!] Error changing hostname.${NC}"
     exit 1
 fi
-
 # Disable hostname through DHCP
 echo -e "\n${YELLOW}[+] Enabling hostname transfer via DHCP${NC}"
 if sed -i '/\[ipv4\]/a dhcp-send-hostname=false' /etc/NetworkManager/system-connections/Wired\ connection\ 1; then
