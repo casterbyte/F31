@@ -2,6 +2,8 @@
 
 F31 is a bash script that hardens your Kali Linux and allows you to minimize noise in the air. Useful for pentesters or Red Team operators where it is important to have minimal impact on the infrastructure to avoid network performance issues.
 
+The tool does not guarantee you guaranteed SOC evasion, as network infrastructures are different, each case of security analysis is unique. The main goal of F31 is to minimize noise in the air.
+
 # Disclaimer
 
 This article and tool is of an introductory nature and is intended for security professionals conducting testing under contract. The distribution of malware, disruption of systems, and violation of correspondence secrecy will be prosecuted. The author is not responsible for any damage caused by this tool.
