@@ -84,6 +84,7 @@ sudo sysctl -w net.ipv4.ip_default_ttl=64 > /dev/null 2>&1
 sudo iptables -t mangle -D PREROUTING -i "${INTERFACE}" -j TTL --ttl-inc 1
 
 # Restore Hostname
+echo -e "\n${YELLOW}[+] Restoring hostname${NC}"
 if sudo hostnamectl set-hostname "${HOSTNAME}"; then
     echo -e "${GREEN}[*] Hostname restored to ${HOSTNAME} successfully.${NC}"
     echo -e "${YELLOW}[+] Restoring /etc/hosts${NC}"
