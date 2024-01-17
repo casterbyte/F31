@@ -4,7 +4,7 @@ F31 is a bash script that hardens your Kali Linux and allows you to minimize noi
 
 # Disclaimer
 
-The article is of an introductory nature and is intended for security professionals conducting testing under contract. The distribution of malware, disruption of systems, and violation of correspondence secrecy will be prosecuted. The author is not responsible for any damage caused by this tool.
+The article and tool is of an introductory nature and is intended for security professionals conducting testing under contract. The distribution of malware, disruption of systems, and violation of correspondence secrecy will be prosecuted. The author is not responsible for any damage caused by this tool.
 
 # Mechanics
 
