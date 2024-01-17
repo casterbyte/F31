@@ -85,7 +85,7 @@ For instructions and an example of how to use it, visit: https://github.com/wear
 
 [+] Configuring firewall
 [*] Allowing established and chained connections, blocking invalid connections, restricting ICMP traffic, blocking unexpected TCP MSS values
-[*] Firewall adjusted successfully.
+[*] Firewall configuration successfully.
 
 [+] Disabling ICMP Redirect
 [*] ICMP Redirects disabled successfully.
