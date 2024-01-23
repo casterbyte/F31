@@ -48,7 +48,7 @@ HOSTNAME="$4"
 
 # Restore original MAC
 echo -e "\n${YELLOW}[+] Restoring MAC${NC}"
-sudo macchanger -p "${INTERFACE}" > /dev/null 2>&1
+sudo ifconfig "${INTERFACE}" down && sudo macchanger -p "${INTERFACE}" > /dev/null 2>&1 && sudo ifconfig "${INTERFACE}" up
 
 # Enable ICMP Redirect
 echo -e "\n${YELLOW}[+] Enabling ICMP Redirect${NC}"

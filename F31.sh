@@ -53,7 +53,7 @@ if command -v iptables > /dev/null 2>&1 && command -v tc > /dev/null 2>&1 && com
     echo -e "${YELLOW}[+] Tools are already installed.${NC}"
 else
     echo -e "${YELLOW}[+] Installing iptables, iproute2, macchanger${NC}"
-    if sudo apt-get install iptables iproute2 macchanger > /dev/null 2>&1; then
+    if sudo apt-get install iptables iproute2 net-tools macchanger > /dev/null 2>&1; then
         echo -e "${GREEN}[*] Tools installed successfully.${NC}"
     else
         echo -e "${RED}[!] Error installing tools.${NC}"
@@ -130,7 +130,7 @@ fi
 
 # MAC Randomizing
 echo -e "\n${YELLOW}[+] Changing MAC${NC}"
-if sudo macchanger -r "${INTERFACE}" > /dev/null 2>&1; then
+if sudo ifconfig "${INTERFACE}" down && sudo macchanger -r "${INTERFACE}" > /dev/null 2>&1 && sudo ifconfig "${INTERFACE}" up; then
     echo -e "${GREEN}[*] Randomize MAC configured successfully.${NC}"
 else
     echo -e "${RED}[!] Error configuring random MAC.${NC}"
