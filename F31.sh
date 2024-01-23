@@ -52,7 +52,7 @@ NOISE_REDUCTION_ARG="$5"
 if command -v iptables > /dev/null 2>&1 && command -v tc > /dev/null 2>&1 && command -v macchanger > /dev/null 2>&1; then
     echo -e "${YELLOW}[+] Tools are already installed.${NC}"
 else
-    echo -e "${YELLOW}[+] Installing iptables, iproute2, macchanger${NC}"
+    echo -e "${YELLOW}[+] Installing iptables, iproute2, net-tools, macchanger${NC}"
     if sudo apt-get install iptables iproute2 net-tools macchanger > /dev/null 2>&1; then
         echo -e "${GREEN}[*] Tools installed successfully.${NC}"
     else
