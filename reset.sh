@@ -57,7 +57,7 @@ sudo sysctl -w net.ipv6.conf.all.accept_redirects=1 > /dev/null 2>&1
 
 # Enable NTP client
 echo -e "\n${YELLOW}[+] Disabling NTP client${NC}"
-if sudo systemctl stop systemd-timesyncd > /dev/null 2>&1; then
+if sudo systemctl start systemd-timesyncd > /dev/null 2>&1; then
     echo -e "${GREEN}[*] NTP client enabled successfully.${NC}"
 else
     echo -e "${RED}[!] Error when enabling the NTP client.${NC}"
