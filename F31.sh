@@ -77,7 +77,7 @@ else
     exit 1
 fi
 # Disable hostname through DHCP
-echo -e "\n${YELLOW}[+] Enabling hostname transfer via DHCP${NC}"
+echo -e "\n${YELLOW}[+] Disabling hostname transfer via DHCP${NC}"
 if sed -i '/\[ipv4\]/a dhcp-send-hostname=false' /etc/NetworkManager/system-connections/Wired\ connection\ 1; then
     echo -e "${GREEN}[*] Hostname through DHCP disabled successfully.${NC}"
 else
