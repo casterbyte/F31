@@ -76,7 +76,7 @@ For instructions and an example of how to use it, visit: https://github.com/wear
 [+] Updating /etc/hosts
 [*] /etc/hosts updated successfully.
 
-[+] Enabling hostname transfer via DHCP
+[+] Disabling hostname transfer via DHCP
 [*] Hostname through DHCP disabled successfully.
 
 [+] Disabling NTP client
