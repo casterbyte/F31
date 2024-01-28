@@ -19,9 +19,9 @@ echo "███████ ██████   ██
 ██      ██████   ██ 
                     "
 echo "F31: Tool for hiding Kali Linux on the network"
-echo "Author: Caster, @wearecaster, <casterinfosec@gmail.com>"
+echo "Author: Cursed, @cursedpkt, <cursedpkt@gmail.com>"
 echo "Version: 1.0.0"
-echo "For instructions and an example of how to use it, visit: https://github.com/wearecaster/F31"
+echo "For instructions and an example of how to use it, visit: https://github.com/cursedpkt/F31"
 
 # Help function
 help() {

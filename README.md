@@ -27,14 +27,14 @@ This article and tool is of an introductory nature and is intended for security 
 It's simple enough, slope the repository, give the bash scripts permissions to run.
 
 ```bash
-caster@kali:~$ git clone https://github.com/wearecaster/F31
-caster@kali:~$ cd F31/
-caster@kali:~/F31$ chmod +x F31.sh reset.sh
+cursed@kali:~$ git clone https://github.com/cursedpkt/F31
+cursed@kali:~$ cd F31/
+cursed@kali:~/F31$ chmod +x F31.sh reset.sh
 ```
 > F31 requires root privileges to run
 
 ```bash
-caster@kali:~$ sudo bash F31.sh
+cursed@kali:~$ sudo bash F31.sh
 ███████ ██████   ██ 
 ██           ██ ███ 
 █████    █████   ██ 
@@ -42,9 +42,9 @@ caster@kali:~$ sudo bash F31.sh
 ██      ██████   ██ 
                     
 F31: Tool for hiding Kali Linux on the network
-Author: Caster, @wearecaster, <casterinfosec@gmail.com>
+Author: Cursed, @cursedpkt, <cursedpkt@gmail.com>
 Version: 1.0.0
-For instructions and an example of how to use it, visit: https://github.com/wearecaster/F31
+For instructions and an example of how to use it, visit: https://github.com/cursedpkt/F31
 Usage: F31.sh --interface <interface> --new-hostname <hostname> [--noise-reduction]
 
 Options:
@@ -58,7 +58,7 @@ The tool will expect two arguments per input. These are the system interface and
 The argument responsible for activating traffic shaping is optional. It may not always be needed by the attacker. And traffic shaping will affect the speed of downloading files, etc. in the future. Use noise reduction wisely.
 
 ```bash
-caster@kali:~/F31$ sudo bash F31.sh --interface eth0 --new-hostname ubuntu --noise-reduction
+cursed@kali:~/F31$ sudo bash F31.sh --interface eth0 --new-hostname ubuntu --noise-reduction
 ███████ ██████   ██ 
 ██           ██ ███ 
 █████    █████   ██ 
@@ -66,9 +66,9 @@ caster@kali:~/F31$ sudo bash F31.sh --interface eth0 --new-hostname ubuntu --noi
 ██      ██████   ██ 
                     
 F31: Tool for hiding Kali Linux on the network
-Author: Caster, @wearecaster, <casterinfosec@gmail.com>
+Author: Cursed, @cursedpkt, <cursedpkt@gmail.com>
 Version: 1.0.0
-For instructions and an example of how to use it, visit: https://github.com/wearecaster/F31
+For instructions and an example of how to use it, visit: https://github.com/cursedpkt/F31
 [+] Tools are already installed.
 
 [+] Changing hostname
@@ -107,17 +107,17 @@ For instructions and an example of how to use it, visit: https://github.com/wear
 I have prepared a special script to roll back all the settings made.
 
 ```bash
-caster@kali:~/F31$ sudo bash reset.sh --interface eth0 --old-hostname kali
+cursed@kali:~/F31$ sudo bash reset.sh --interface eth0 --old-hostname kali
 ███████ ██████   ██ 
 ██           ██ ███ 
 █████    █████   ██ 
 ██           ██  ██ 
 ██      ██████   ██ 
                     
-F31: Tool for hiding Kali Linux on the network (Reset script)
-Author: Caster, @wearecaster, <casterinfosec@gmail.com>
+F31: Tool for hiding Kali Linux on the network (Reset Script)
+Author: Cursed, @cursedpkt, <cursedpkt@gmail.com>
 Version: 1.0.0
-For instructions and an example of how to use it, visit: https://github.com/wearecaster/F31
+For instructions and an example of how to use it, visit: https://github.com/cursedpkt/F31
 
 [+] Restoring MAC
 
