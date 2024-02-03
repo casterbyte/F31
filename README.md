@@ -123,7 +123,7 @@ For instructions and an example of how to use it, visit: https://github.com/curs
 
 [+] Enabling ICMP Redirect
 
-[+] Disabling NTP client
+[+] Enabling NTP client
 [*] NTP client enabled successfully.
 
 [+] Restoring firewall configuration
