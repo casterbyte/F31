@@ -88,7 +88,13 @@ fi
 # Disable NTP client
 echo -e "\n${YELLOW}[+] Disabling NTP client${NC}"
 if sudo systemctl stop systemd-timesyncd > /dev/null 2>&1; then
-    echo -e "${GREEN}[*] NTP client shut down successfully.${NC}"
+    echo -e "${GREEN}[*] Systemd NTP client shut down successfully.${NC}"
+elif
+   sudo systemctl stop ntpsec > /dev/null 2>&1; then
+    echo -e "${GREEN}[*] NTPSec daemon shut down succesfully.${NC}"
+elif
+   sudo systemctl stop chronyd > /dev/null 2>&1; then
+    echo -e "${GREEN}[*] Chronyd NTP daemon shut down succesfully.${NC}"
 else
     echo -e "${RED}[!] Error when shutting down the NTP client.${NC}"
     exit 1
