@@ -19,9 +19,9 @@ echo "███████ ██████   ██
 ██      ██████   ██ 
                     "
 echo "F31: Tool for hiding Kali Linux on the network (Reset script)"
-echo "Author: Cursed, @cursedpkt, <cursedpkt@gmail.com>"
+echo "Author: Caster, @casterbyte, <caster@exploit.org>"
 echo "Version: 1.0.0"
-echo "For instructions and an example of how to use it, visit: https://github.com/cursedpkt/F31"
+echo "For instructions and an example of how to use it, visit: https://github.com/casterbyte/F31"
 
 # Help function
 help() {
