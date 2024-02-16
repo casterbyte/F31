@@ -42,7 +42,7 @@ caster@kali:~$ sudo bash F31.sh
 ██      ██████   ██ 
                     
 F31: Tool for hiding Kali Linux on the network
-Author: Caster, @casterbyte, <cursedpkt@gmail.com>
+Author: Caster, @casterbyte, <caster@exploit.org>
 Version: 1.0.0
 For instructions and an example of how to use it, visit: https://github.com/casterbyte/F31
 Usage: F31.sh --interface <interface> --new-hostname <hostname> [--noise-reduction]
@@ -66,7 +66,7 @@ caster@kali:~/F31$ sudo bash F31.sh --interface eth0 --new-hostname ubuntu --noi
 ██      ██████   ██ 
                     
 F31: Tool for hiding Kali Linux on the network
-Author: Caster, @casterbyte, <cursedpkt@gmail.com>
+Author: Caster, @casterbyte, <caster@exploit.org>
 Version: 1.0.0
 For instructions and an example of how to use it, visit: https://github.com/casterbyte/F31
 [+] Tools are already installed.
@@ -115,7 +115,7 @@ caster@kali:~/F31$ sudo bash reset.sh --interface eth0 --old-hostname kali
 ██      ██████   ██ 
                     
 F31: Tool for hiding Kali Linux on the network (Reset Script)
-Author: Caster, @casterbyte, <cursedpkt@gmail.com>
+Author: Caster, @casterbyte, <caster@exploit.org>
 Version: 1.0.0
 For instructions and an example of how to use it, visit: https://github.com/casterbyte/F31
 
