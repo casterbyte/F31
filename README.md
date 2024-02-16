@@ -27,7 +27,7 @@ This article and tool is of an introductory nature and is intended for security 
 It's simple enough, slope the repository, give the bash scripts permissions to run.
 
 ```bash
-caster@kali:~$ git clone https://github.com/cursedpkt/F31
+caster@kali:~$ git clone https://github.com/casterbyte/F31
 caster@kali:~$ cd F31/
 caster@kali:~/F31$ chmod +x F31.sh reset.sh
 ```
