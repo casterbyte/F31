@@ -1,6 +1,7 @@
-# F31: Hiding Kali Linux (The tool will be rewritten and get a new concept, WIP)
+# F31: Hiding Kali Linux [OUTDATED]
 
-# The tool will be redesigned (Red & Purple Team)
+**I made a mistake with the concept of this tool. The realization of the idea turned out to be a failure.**
+**The tool needs to be rewritten and improved, which I am currently doing.**
 
 F31 is a bash script that hardens your Kali Linux and allows you to minimize noise in the air. Useful for pentesters or Red Team operators where it is important to have minimal impact on the infrastructure to avoid network performance issues.
 
